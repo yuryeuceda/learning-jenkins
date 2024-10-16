@@ -1,7 +1,9 @@
 pipeline {
 
     agent any
-    
+    environment {
+        PASS = credentials('DOCKERHUB-PASSWORD')
+    }    
     stages {
         stage('Build') {
             steps {
