@@ -1,0 +1,4 @@
+services:
+  maven:
+    image:  "yuryeuceda/$IMAGE:$BUILD_TAG"
+    container_name: maven-app
