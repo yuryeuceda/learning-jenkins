@@ -34,7 +34,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh '''
-                    echo [JENKINS] deploying
+                    echo [JENKINS] deploying last time
                     /pipeline/jenkins/deploy/deploy.sh
                 '''
             }
