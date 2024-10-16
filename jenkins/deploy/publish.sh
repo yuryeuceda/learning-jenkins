@@ -5,4 +5,4 @@ export TAG=$(sed -n '2p' /tmp/.auth)
 export PASS=$(sed -n '3p' /tmp/.auth)
 
 docker login -u yuryeuceda -p $PASS
-cd ./jenkins/maven && docker-compose up -d
+cd /pipeline/jenkins/maven && docker-compose up -d
