@@ -9,8 +9,8 @@ pipeline {
             steps {
                 sh '''
                     echo '[JENKINS] building'
-                    /pipeline/jenkins/build/mvn.sh mvn -B -DskipTests clean package
-                    /pipeline/jenkins/build/build.sh
+                    ./jenkins/build/mvn.sh mvn -B -DskipTests clean package
+                    ./jenkins/build/build.sh
                 '''
             }
         }
