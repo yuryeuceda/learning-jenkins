@@ -18,7 +18,7 @@ pipeline {
             steps {
                 sh '''
                     echo [JENKINS] testing
-                    /pipeline/jenkins/test/test.sh mvn test
+                    ./jenkins/test/test.sh mvn test
                 '''
 
             }
@@ -27,7 +27,7 @@ pipeline {
             steps {
                 sh '''
                     echo [JENKINS] pushing
-                    /pipeline/jenkins/push/push.sh
+                    ./jenkins/push/push.sh
                 '''
             }
         }
@@ -35,7 +35,7 @@ pipeline {
             steps {
                 sh '''
                     echo [JENKINS] deploying last time
-                    /pipeline/jenkins/deploy/deploy.sh
+                    ./jenkins/deploy/deploy.sh
                 '''
             }
         }
