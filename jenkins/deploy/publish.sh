@@ -1,8 +1,8 @@
 #!/bin/bash
 
-export IMAGE=$(sed -n '1p' /tmp/.auth)
-export TAG=$(sed -n '2p' /tmp/.auth)
-export PASS=$(sed -n '3p' /tmp/.auth)
+export IMAGE=$(sed -n '1p' .auth)
+export TAG=$(sed -n '2p' .auth)
+export PASS=$(sed -n '3p' .auth)
 
 docker login -u yuryeuceda -p $PASS
-cd /pipeline/jenkins/maven && docker-compose up -d
+cd ./jenkins/maven && docker-compose up -d
