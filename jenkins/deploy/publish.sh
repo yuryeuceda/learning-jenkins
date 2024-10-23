@@ -10,6 +10,6 @@ echo "Login into dockerhub"
 #echo "$PASS" | docker login --username yuryeuceda --password-stdin
 #echo "$PASS" | docker login -u 'yuryeuceda' --password-stdin
 echo  "$PASS"
-docker login -u yuryeuceda -p "dckr_pat_gq1eKLEoz_clmOtvGEJubVhxq_I"
+docker login -u yuryeuceda -p "q1W@745692"
 echo "Composing"
 docker-compose up -d
