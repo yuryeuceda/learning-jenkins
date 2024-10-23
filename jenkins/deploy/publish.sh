@@ -11,4 +11,5 @@ docker login -u yuryeuceda -p "$PASS"
 #echo "$PASS" | docker login -u 'yuryeuceda' --password-stdin
 #docker login
 echo "Composing"
+dos2unix docker-compose.yml
 docker-compose up -d
