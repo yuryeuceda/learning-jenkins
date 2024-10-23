@@ -11,4 +11,4 @@ docker login -u yuryeuceda -p "$PASS"
 #echo "$PASS" | docker login -u 'yuryeuceda' --password-stdin
 #docker login
 echo "Composing"
-#docker-compose up -d
+docker-compose up -d
