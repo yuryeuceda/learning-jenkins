@@ -1,6 +1,6 @@
 # pipeline-maven
 
-
+.
 
 ## Getting started
 
